@@ -1,0 +1,13 @@
+package com.example.segoupdated.domain.entity
+
+data class Company(
+    val companyId: Int,
+    val email: String,
+    val password: Int,
+    val logo: String? = null,
+    val name: String,
+    val address: String,
+    val specialization: String,
+    val overView: String,
+
+    )

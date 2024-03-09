@@ -1,4 +1,5 @@
-package com.example.segoupdated.ui.theme
+package com.example.segoupdated.presentation.ui.theme
+
 
 import android.app.Activity
 import android.os.Build
@@ -61,7 +62,6 @@ fun SEGOUPDATEDTheme(
             WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = darkTheme
         }
     }
-
     MaterialTheme(
         colorScheme = colorScheme,
         typography = Typography,
