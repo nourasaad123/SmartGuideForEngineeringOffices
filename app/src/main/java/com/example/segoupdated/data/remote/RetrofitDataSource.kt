@@ -1,6 +1,6 @@
 package com.example.segoupdated.data.remote
 
-import com.example.segoupdated.data.repository.dto.AdmineLoginResponseDto
+import com.example.segoupdated.data.repository.dto.AdminLoginResponseDto
 import com.example.segoupdated.data.repository.dto.CompanyDto
 import com.example.segoupdated.data.repository.dto.LoginRequestDto
 import com.example.segoupdated.data.repository.dto.UserLoginResponseDto
@@ -18,11 +18,11 @@ class RetrofitDataSource @Inject constructor(
         return apiService.userLogin(loginRequestDto = loginRequestDto)
     }
 
-    override suspend fun adminCompanyLogin(loginRequestDto: LoginRequestDto): AdmineLoginResponseDto {
+    override suspend fun adminCompanyLogin(loginRequestDto: LoginRequestDto): AdminLoginResponseDto {
        return apiService.adminCompanyLogin(loginRequestDto)
     }
 
     override suspend fun getCompanyBySpecializationId(id: Int): List<CompanyDto> {
-       return apiService.getCompanyBySpitializationId(id)
+       return apiService.getCompanyBySpecializationId(id)
     }
 }

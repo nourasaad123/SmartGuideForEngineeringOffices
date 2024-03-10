@@ -8,23 +8,23 @@ import javax.inject.Inject
 class ProjectRepository @Inject constructor(
      private val  remoteDataSource: RemoteDataSource
 ): IProjectRepository {
-    override fun addProject(project: Project): Project {
+    override suspend fun addProject(project: Project): Project {
         TODO("Not yet implemented")
     }
 
-    override fun deleteProjectById(projectId: Int) {
+    override suspend fun deleteProjectById(projectId: Int) {
         TODO("Not yet implemented")
     }
 
-    override fun updateProject(projectId: Int, project: Project): Project {
+    override suspend fun updateProject(projectId: Int, project: Project): Project {
         TODO("Not yet implemented")
     }
 
-    override fun getProjectById(projectId: Int): Project {
+    override suspend fun getProjectById(projectId: Int): Project {
         TODO("Not yet implemented")
     }
 
-    override fun getAllProjects(): List<Project> {
+    override suspend fun getAllProjects(): List<Project> {
         TODO("Not yet implemented")
     }
 }

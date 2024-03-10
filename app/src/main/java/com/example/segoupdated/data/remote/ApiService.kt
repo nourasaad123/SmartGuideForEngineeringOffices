@@ -1,6 +1,6 @@
 package com.example.segoupdated.data.remote
 
-import com.example.segoupdated.data.repository.dto.AdmineLoginResponseDto
+import com.example.segoupdated.data.repository.dto.AdminLoginResponseDto
 import com.example.segoupdated.data.repository.dto.CompanyDto
 import com.example.segoupdated.data.repository.dto.UserLoginResponseDto
 import com.example.segoupdated.data.repository.dto.LoginRequestDto
@@ -17,10 +17,10 @@ interface ApiService {
   suspend fun userLogin(@Body loginRequestDto: LoginRequestDto): UserLoginResponseDto
 
   @POST
-  suspend fun adminCompanyLogin(@Body loginRequestDto: LoginRequestDto) : AdmineLoginResponseDto
+  suspend fun adminCompanyLogin(@Body loginRequestDto: LoginRequestDto) : AdminLoginResponseDto
 
   @GET("specialization/companies/{id}")
-  suspend fun getCompanyBySpitializationId(@Path("id") id:Int):List<CompanyDto>
+  suspend fun getCompanyBySpecializationId(@Path("id") id:Int):List<CompanyDto>
 
   
 }
