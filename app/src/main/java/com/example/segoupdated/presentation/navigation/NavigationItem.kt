@@ -1,4 +1,4 @@
-package com.example.segoupdated.presentation.composable
+package com.example.segoupdated.presentation.navigation
 
 
 data class NavigationItem(

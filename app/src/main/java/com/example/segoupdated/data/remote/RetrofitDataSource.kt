@@ -9,7 +9,7 @@ import javax.inject.Inject
 
 class RetrofitDataSource @Inject constructor(
     private val apiService: ApiService
-) : RemoteDataSource{
+) : RemoteDataSource {
     override suspend fun getAllCompany(): List<CompanyDto> {
         return apiService.getAllCompany()
     }
@@ -19,10 +19,10 @@ class RetrofitDataSource @Inject constructor(
     }
 
     override suspend fun adminCompanyLogin(loginRequestDto: LoginRequestDto): AdminLoginResponseDto {
-       return apiService.adminCompanyLogin(loginRequestDto)
+        return apiService.adminCompanyLogin(loginRequestDto)
     }
 
     override suspend fun getCompanyBySpecializationId(id: Int): List<CompanyDto> {
-       return apiService.getCompanyBySpecializationId(id)
+        return apiService.getCompanyBySpecializationId(id)
     }
 }

@@ -7,6 +7,4 @@ interface IChatRepository {
     suspend fun receiveMessage(): Message
     suspend fun deleteMessage(messageId: Int)
     suspend fun editMessage(messageId: Int, newText: String)
-
-
 }

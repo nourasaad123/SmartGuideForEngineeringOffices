@@ -6,9 +6,7 @@ import com.example.segoupdated.data.repository.dto.LoginRequestDto
 import com.example.segoupdated.data.repository.dto.UserLoginResponseDto
 
 interface RemoteDataSource {
-
     suspend fun getAllCompany(): List<CompanyDto>
-
 
     suspend fun userLogin(loginRequestDto: LoginRequestDto): UserLoginResponseDto
 

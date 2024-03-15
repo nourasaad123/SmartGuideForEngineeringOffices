@@ -1,7 +1,8 @@
 package com.example.segoupdated
 
 import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
 
-
-class SGEO : Application(){
+@HiltAndroidApp
+class SGEO : Application() {
 }

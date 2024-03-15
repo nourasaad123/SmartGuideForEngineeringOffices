@@ -1,8 +1,8 @@
 package com.example.segoupdated.domain.entity
 
 data class Conversation(
-    val chat:Chat,
-    val unreadMessageCount:Int,//0
-    val lastMessagePreview:String?,//=null
-    val pinnedMessages:List<Message> = emptyList()
+    val chat: Chat,
+    val unreadMessageCount: Int,
+    val lastMessagePreview: String,
+    val pinnedMessages: List<Message>
 )

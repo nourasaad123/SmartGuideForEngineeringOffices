@@ -15,7 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.segoupdated.presentation.ui.theme.basicColor
+import com.example.segoupdated.presentation.ui.theme.PrimaryColor
 
 
 @Composable
@@ -23,7 +23,7 @@ fun PropagandaCard(specialName: String) {
     Card(
         modifier = Modifier
             .padding(start = 10.dp)
-            .border(2.dp, color = basicColor, shape = RoundedCornerShape(20.dp)),
+            .border(2.dp, color = PrimaryColor, shape = RoundedCornerShape(20.dp)),
         shape = RoundedCornerShape(16.dp),
         colors = CardDefaults.cardColors(Color.White),
 

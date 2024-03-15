@@ -1,15 +1,15 @@
 package com.example.segoupdated.domain.repository
 
-import com.example.segoupdated.domain.entity.Project
+import com.example.segoupdated.domain.entity.ProjectCompany
 
 interface IProjectRepository {
-   suspend fun addProject(project: Project): Project
+    suspend fun addProject(project: ProjectCompany): ProjectCompany
 
     suspend fun deleteProjectById(projectId: Int)
 
-   suspend fun updateProject(projectId: Int, project: Project): Project
+    suspend fun updateProject(projectId: Int, project: ProjectCompany): ProjectCompany
 
-   suspend fun getProjectById(projectId: Int): Project
+    suspend fun getProjectById(projectId: Int): ProjectCompany
 
-   suspend fun getAllProjects(): List<Project>
+    suspend fun getAllProjects(): List<ProjectCompany>
 }

@@ -29,7 +29,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.segoupdated.R
-import com.example.segoupdated.presentation.ui.theme.basicColor
+import com.example.segoupdated.presentation.ui.theme.PrimaryColor
 
 @Preview(showBackground = true)
 @OptIn(ExperimentalMaterial3Api::class)
@@ -79,7 +79,6 @@ fun ContentOfBottomSheet() {
                 singleLine = true,
 
                 )
-
         }
         Spacer(modifier = Modifier.height(20.dp))
         Row(horizontalArrangement = Arrangement.Center) {
@@ -109,7 +108,6 @@ fun ContentOfBottomSheet() {
                 singleLine = true,
 
                 )
-
         }
         Spacer(modifier = Modifier.height(20.dp))
 
@@ -130,7 +128,6 @@ fun ContentOfBottomSheet() {
                 },
                 label = {
                     Text(text = "linkedIn")
-
                 },
                 colors = TextFieldDefaults.outlinedTextFieldColors(
                     focusedBorderColor = Color(0xFF8A97B7),
@@ -140,7 +137,6 @@ fun ContentOfBottomSheet() {
                 singleLine = true,
 
                 )
-
         }
         Spacer(modifier = Modifier.height(20.dp))
 
@@ -161,7 +157,6 @@ fun ContentOfBottomSheet() {
                 },
                 label = {
                     Text(text = "address")
-
                 },
                 colors = TextFieldDefaults.outlinedTextFieldColors(
                     focusedBorderColor = Color(0xFF8A97B7),
@@ -171,13 +166,12 @@ fun ContentOfBottomSheet() {
                 singleLine = true,
 
                 )
-
         }
         Spacer(modifier = Modifier.height(6.dp))
         Button(
             onClick = {
 
-            }, colors = ButtonDefaults.buttonColors(basicColor),
+            }, colors = ButtonDefaults.buttonColors(PrimaryColor),
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(start = 20.dp, end = 20.dp, top = 10.dp, bottom = 10.dp)
@@ -186,6 +180,5 @@ fun ContentOfBottomSheet() {
         ) {
             Text(text = "Save")
         }
-
     }
 }

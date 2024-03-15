@@ -4,7 +4,7 @@ import com.example.segoupdated.domain.entity.Message
 import com.example.segoupdated.domain.repository.IChatRepository
 import javax.inject.Inject
 
-class MessageUseCase @Inject constructor(private val chatRepository: IChatRepository) {
+class ManageMessageUseCase @Inject constructor(private val chatRepository: IChatRepository) {
     suspend fun sendMessage(message: Message) {
         return chatRepository.sendMessage(message)
     }
@@ -21,5 +21,4 @@ class MessageUseCase @Inject constructor(private val chatRepository: IChatReposi
     suspend fun editMessage(messageId: Int, newText: String) {
         return chatRepository.editMessage(messageId, newText)
     }
-
 }

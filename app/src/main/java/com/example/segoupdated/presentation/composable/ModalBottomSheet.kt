@@ -162,11 +162,9 @@ fun ModalBottomSheetForProfile() {
                         contentDescription = null,
                         tint = Color(0xFF8A97B7)
                     )
-
                 }
             }
             ContentOfBottomSheet()
         }
     }
-
 }

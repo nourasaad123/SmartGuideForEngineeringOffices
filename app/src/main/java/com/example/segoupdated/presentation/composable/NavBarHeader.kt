@@ -50,7 +50,6 @@ fun NavBarHeader() {
                     color = Color(0xFF8A97B7),
                     shape = CircleShape
                 )
-
         )
         Text(
             text = "user name",

@@ -4,7 +4,7 @@ import com.example.segoupdated.domain.entity.Specialization
 import com.example.segoupdated.domain.repository.ISpecializationRepository
 import javax.inject.Inject
 
-class SpecializationUseCase @Inject constructor(
+class ManageSpecializationUseCase @Inject constructor(
    private val specializationRepository:ISpecializationRepository
 ) {
 

@@ -16,7 +16,7 @@ import androidx.compose.ui.unit.dp
 
 
 @Composable
-fun Companies(imageList: Int) {
+fun CompanyCard(imageList: Int) {
     Card(
         modifier = Modifier
             .fillMaxWidth()

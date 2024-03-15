@@ -1,7 +1,7 @@
 package com.example.segoupdated.domain.entity
 
 data class Company(
-    val companyId: Int,
+    val id: Int,
     val email: String,
     val password: Int,
     val logo: String?,
@@ -9,5 +9,4 @@ data class Company(
     val address: String,
     val specialization: String,
     val overView: String,
-
     )

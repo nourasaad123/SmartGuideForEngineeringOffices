@@ -1,13 +1,13 @@
 package com.example.segoupdated.domain.usecase
 
-import com.example.segoupdated.domain.entity.Project
+import com.example.segoupdated.domain.entity.ProjectCompany
 import com.example.segoupdated.domain.repository.IProjectRepository
 import javax.inject.Inject
 
-class ProjectUseCase @Inject constructor(
-   private val projectRepository: IProjectRepository
+class ManageProjectUseCase @Inject constructor(
+    private val projectRepository: IProjectRepository
 ) {
-   suspend fun addProject(project: Project): Project {
+    suspend fun addProject(project: ProjectCompany): ProjectCompany {
         return projectRepository.addProject(project)
     }
 
@@ -16,17 +16,17 @@ class ProjectUseCase @Inject constructor(
 
     }
 
-    suspend fun updateProject(projectId: Int, project: Project): Project {
+    suspend fun updateProject(projectId: Int, project: ProjectCompany): ProjectCompany {
         return projectRepository.updateProject(projectId, project)
 
     }
 
-    suspend fun getProjectById(projectId: Int): Project {
+    suspend fun getProjectById(projectId: Int): ProjectCompany {
         return projectRepository.getProjectById(projectId)
 
     }
 
-    suspend fun getAllProjects(): List<Project> {
+    suspend fun getAllProjects(): List<ProjectCompany> {
         return projectRepository.getAllProjects()
     }
 }

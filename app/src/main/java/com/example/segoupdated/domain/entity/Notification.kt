@@ -1,9 +1,9 @@
 package com.example.segoupdated.domain.entity
 
 data class Notification(
-    val notificationId:Int,
+    val notificationId: Int,
     val type: NotificationType,
-    val sender: Any?,
-    val messagePreview: String? = null,
+    val senderId: Int,
+    val messagePreview: String?,
     val timestamp: Long
 )
