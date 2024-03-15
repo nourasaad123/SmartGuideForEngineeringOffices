@@ -9,4 +9,4 @@ data class Company(
     val address: String,
     val specialization: String,
     val overView: String,
-    )
+)

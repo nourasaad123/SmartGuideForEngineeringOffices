@@ -96,26 +96,26 @@ fun ModalBottomSheetForProfile() {
         }
         ProfileImage("Change Logo")
         Spacer(modifier = Modifier.height(6.dp))
-        CustomTextFieldWithIconProfile(
+        CustomTextField(
             value = editName,
             onValueChanged = { newEdite -> editName = newEdite },
             label = "edit name"
         )
         Spacer(modifier = Modifier.height(6.dp))
-        CustomTextFieldWithIconProfile(
+        CustomTextField(
             value = editPassword,
             onValueChanged = { editPassword = it },
             label = "edit password"
         )
         Spacer(modifier = Modifier.height(6.dp))
-        CustomTextFieldWithIconProfile(
+        CustomTextField(
             value = addDescription,
             onValueChanged = { addDescription = it },
             label = "add description"
         )
 
         Spacer(modifier = Modifier.height(6.dp))
-        CustomTextFieldWithIconProfile(
+        CustomTextField(
             value = updateProject,
             onValueChanged = { updateProject = it },
             label = "update project"

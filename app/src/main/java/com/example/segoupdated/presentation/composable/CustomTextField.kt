@@ -25,7 +25,7 @@ import androidx.compose.ui.unit.dp
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun CustomTextFieldWithIconProfile(
+fun CustomTextField(
     value: String,
     onValueChanged: (String) -> Unit,
     label: String,
@@ -51,7 +51,6 @@ fun CustomTextFieldWithIconProfile(
                     IconButton(onClick = { isEditing = false }) {
                         Icon(
                             Icons.Filled.Done,
-                            //  painter = painterResource(id = R.drawable.baseline_edit_24),
                             contentDescription = null
                         )
                     }
@@ -84,7 +83,6 @@ fun CustomTextFieldWithIconProfile(
                     IconButton(onClick = { isEditing = true }) {
                         Icon(
                             Icons.Filled.Edit,
-                            //  painter = painterResource(id = R.drawable.baseline_edit_24),
                             contentDescription = null
                         )
                     }

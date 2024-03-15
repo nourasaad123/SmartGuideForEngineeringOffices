@@ -4,7 +4,9 @@ import com.example.segoupdated.domain.entity.Message
 import com.example.segoupdated.domain.repository.IChatRepository
 import javax.inject.Inject
 
-class ManageMessageUseCase @Inject constructor(private val chatRepository: IChatRepository) {
+class ManageMessageUseCase @Inject constructor(
+    private val chatRepository: IChatRepository
+) {
     suspend fun sendMessage(message: Message) {
         return chatRepository.sendMessage(message)
     }
