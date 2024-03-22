@@ -10,12 +10,11 @@ import com.example.segoupdated.data.remote.model.dto.UserSignUpRequestDto
 import com.example.segoupdated.data.remote.model.dto.UserSignUpResponseDto
 
 interface RemoteDataSource {
-
     suspend fun getAllCompany(): List<CompanyDto>
 
     suspend fun userLogin(loginRequestDto: LoginRequestDto): UserLoginResponseDto
 
-    suspend fun userSignup(userSignUpRequestDto: UserSignUpRequestDto) : UserSignUpResponseDto
+    suspend fun userSignup(userSignUpRequestDto: UserSignUpRequestDto): UserSignUpResponseDto
     suspend fun adminCompanyLogin(loginRequestDto: LoginRequestDto): AdminLoginResponseDto
 
     suspend fun getCompanyBySpecializationId(id: Int): List<CompanyDto>

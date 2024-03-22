@@ -2,19 +2,19 @@ package com.example.segoupdated.data.remote.model.mapper
 
 import com.example.segoupdated.data.remote.model.dto.AddProjectRequest
 import com.example.segoupdated.data.remote.model.dto.AddProjectResponseDto
-import com.example.segoupdated.domain.entity.Project
+import com.example.segoupdated.domain.entity.ProjectCompany
 
-fun AddProjectResponseDto.toProject() :Project =Project(
+fun AddProjectResponseDto.toProjectCompany(): ProjectCompany = ProjectCompany(
     id = projectDto?.id ?: 0,
-    image = projectDto?.image1 ?:"",
-    description = projectDto?.description ?:"",
-    name = projectDto?.name ?:""
+    image = projectDto?.image1 ?: "",
+    description = projectDto?.description ?: "",
+    name = projectDto?.name ?: ""
 )
 
-fun Project.toAddProjectRequest():AddProjectRequest = AddProjectRequest(
+fun ProjectCompany.toAddProjectRequest(): AddProjectRequest = AddProjectRequest(
     name = name,
-    image = image ,
-    description = description ,
+    image = image,
+    description = description,
     companyName = ""
 )
 
